@@ -8,9 +8,9 @@ app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname+"/public/index.html"));
 });
 
-var pets = require("./public/js/petFunction.js");
+var data = require("./public/data.json");
 app.get("/data", (req, res) => {
-	res.json(pets);
+	res.json(data);
 });
 
 app.listen(process.env.PORT || 8080);
