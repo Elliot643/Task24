@@ -98,7 +98,7 @@ typings/
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
-!.vscode/tasks.json
+!.vscode/tasksgit 
 !.vscode/launch.json
 !.vscode/extensions.json
 
