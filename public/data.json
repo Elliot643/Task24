@@ -1,0 +1,25 @@
+{
+  "name": "Anders Andersson",
+  "email": "Anders_Andersson@gmail.com",
+  "age": 27,
+  "address":[
+    {"city":"Växjö","streetAddress": "Storgatan 10","postal": "35277"}
+  ],
+
+  "languages":[
+    {"name": "Swedish", "experience" : "High"},
+    {"name": "English", "experience" : "High"},
+    {"name": "German", "experience" : "Moderate"},
+    {"name": "French", "experience" : "Low"}
+  ],
+
+  "education":[
+    {"school": "School", "title": "Data Engineer"}
+  ],
+
+    "links":[
+      {"linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/"},
+      {"github": "https://github.com/Edis91/cv"},
+      {"homepage:": "https://edis91.github.io/cv"}
+    ]
+}
