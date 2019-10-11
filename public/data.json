@@ -1,40 +1,44 @@
 {
-  "name": "Anders Andersson",
-  "email": "Anders_Andersson@gmail.com",
-  "age": 27,
-  "phone":123456789,
-  "address":{
-    "city":"Växjö",
-    "streetAddress": "Storgatan 10",
-    "postal": "35277",
-    "country": "Sweden"
-  },
-
-  "skills":[
-    "Java",
-    "JavaScript",
-    "HTML",
-    "C#"
-  ],
-  "intrests":[
-    "Skiing",
-    "Computer Games"
-  ],
-
-  "languages":[
-    {"name": "Swedish", "experience" : "High"},
-    {"name": "English", "experience" : "High"},
-    {"name": "German", "experience" : "Moderate"},
-    {"name": "French", "experience" : "Low"}
-  ],
-
-  "education":[
-    {"school": "School", "title": "Data Engineer"}
-  ],
-
-  "links":{
-    "linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/",
-    "github": "https://github.com/Edis91/cv",
-    "homepage:": "https://edis91.github.io/cv"
+    "name": "Anders Andersson",
+    "email": "Anders_Andersson@gmail.com",
+    "age": 27,
+    "phone":123456789,
+    "address":{
+      "city":"Växjö",
+      "streetAddress": "Storgatan 10",
+      "postal": "35277"
+    },
+  
+    "skills":[
+      "Java",
+      "JavaScript",
+      "HTML",
+      "C#"
+    ],
+    "intrests":[
+      "Skiing",
+      "Computer Games"
+    ],
+  
+    "languages":[
+      {"name": "Swedish", "experience" : "High"},
+      {"name": "English", "experience" : "High"},
+      {"name": "German", "experience" : "Moderate"},
+      {"name": "French", "experience" : "Low"}
+    ],
+  
+    "education":[
+      {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"},
+      {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"}
+    ],
+    "experience":[
+      {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"},
+      {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"}
+    ],
+  
+    "links":{
+      "linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/",
+      "github": "https://github.com/Edis91/cv",
+      "homepage:": "https://edis91.github.io/cv"
+    }
   }
-}
