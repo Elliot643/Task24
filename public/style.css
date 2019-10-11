@@ -1,6 +1,8 @@
 body {
     font-family: "Montserrat";
     text-align: center;
+    background-color: grey;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #111;
+    color: #EEEEEE;
 }
 
 span {
@@ -26,25 +28,13 @@ section {
 
 img {
     width: 100%;
+    border-style:dot-dash;
 }
 
-.card-body {
+.card {
     text-align: left;
-}
-
-/* Containers */
-.container-fluid {
-    padding: 2% 15% 5%;
-}
-
-/* Sections */
-.colored-section {
-    background-color: #222831;
-    color: #FFF;
-}
-
-.other-section {
-    background-image: -webkit-linear-gradient(45deg, #f0134d 50%, #23374d 50%);
+    background-color: #303841;
+    border-style: solid;
 }
 
 /* Headings */
