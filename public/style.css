@@ -1,16 +1,14 @@
 body {
     font-family: "Montserrat";
     text-align: center;
-    background-color: grey;
+    background-color: #000;
+    color:#FFF;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat-Bold";
-}
 
-p {
-    color: #EEEEEE;
 }
 
 span {
@@ -35,6 +33,7 @@ img {
     text-align: left;
     background-color: #303841;
     border-style: solid;
+    margin-bottom: 50px;
 }
 
 /* Headings */
@@ -83,8 +82,7 @@ img {
 }
 
 .feature-box {
-    padding: 2%;
-    text-align: center;
+    padding-right: 2%;
 }
 
 .icon:hover {
@@ -96,14 +94,6 @@ img {
     color: #a1dd70;
 }
 
-/* Skills Section */
-#skills {
-    background-color: #222831;
-}
-
-.heading-color-white {
-  color:#FFF;
-}
 
 .style-text {
     font-size: 3rem;
