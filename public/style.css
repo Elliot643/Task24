@@ -1,0 +1,165 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: #000;
+    color:#FFF;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+
+}
+
+span {
+    text-decoration: underline;
+}
+
+canvas {
+    position:absolute;
+    left:0;
+}
+
+section {
+    position:relative;
+}
+
+img {
+    width: 100%;
+    border-style:dot-dash;
+}
+
+.card {
+    text-align: left;
+    background-color: #303841;
+    border-style: solid;
+    margin-bottom: 50px;
+}
+
+/* Headings */
+.big-heading {
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    text-align: left;
+}
+
+/* Navigation bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem
+}
+
+/* Title Section */
+.title-icon {
+    font-size: 15rem;
+    transform: rotate(25deg);
+    padding: 5%;
+}
+
+#title .container-fluid {
+    padding: 3% 15%;
+    text-align: left;
+}
+
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    padding-right: 2%;
+}
+
+.icon:hover {
+    color: red;
+}
+
+
+.icon-footer:hover {
+    color: #a1dd70;
+}
+
+
+.style-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* goals Section */
+#goals {
+    padding: 50px;
+}
+
+.goal-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.goals-column {
+    padding: 3% 2%;
+}
+
+.project-column {
+    padding:3% 7%;
+}
+
+.project-align {
+    text-align:left;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #222831;
+}
+
+#footer .container-fluid {
+    padding: 10px 0 10px 0;
+}
+
+.paragraph-footer {
+    color:#FFF;
+    text-align: center;
+}
+
+@media (max-width:1028px) {
+    .title-icon {
+        font-size: 10rem;
+    }
+    .big-heading {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:720px){
+    .title-icon {
+        font-size: 8rem;
+    }
+    .big-heading {
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width:584px){
+    .title-icon {
+        font-size: 4rem;
+    }
+    .big-heading {
+        font-size: 1.0rem;
+    }
+}

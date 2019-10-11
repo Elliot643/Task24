@@ -1,35 +1,151 @@
 <!DOCTYPE html>
-<html>  
-    <head>    
-        <meta charset="utf-8">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="dataParser.js"></script>    
-        <title>Online CV</title>  
-    </head>  
-    <body onload="placeInfo()">    
-        <h1>Online CV</h1>
-        <div id="info">
-            <p><img src="picture.jpg" alt="Bild"></p>
-            <p id="namePlacement"></p>
-            <p id="phonePlacement"></p>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="titlePlacement">Title</title>
+    <!-- Fav icon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Ubuntu&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ee27a38f4c.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dataParser.js"></script>
+</head>
+
+<body onload="placeInfo()">
+
+    <section id='lol' class="colored-section" id="title">
+        <div class="container-fluid">
+            <canvas> </canvas>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"> Experience </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education"> Education </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"> Skills </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interests"> Interests </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6" >
+                    <h1 class="big-heading"> Welcome to the page of a <span> fullstack developer <span></h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="title-icon fas fa-code"></i>
+                </div>
+            </div>
         </div>
-        <div id="languages">
 
+    </section>
 
+    <!-- About Me -->
+
+    <section class="other-section" id="about">
+            <div class="row">
+                <div class="feature-box col-xl-3 col-lg-4 col-md-3 col-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="picture.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="feature-title navbar-brand"> Contact info</h3>
+                                <p> <i class="fas fa-signature fa-2x"></i> <i id="name"></i> </p>
+                                <p> <i class="fas fa-phone-volume fa-2x"></i> <i id="phone"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="city"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="streetAddress"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="postal"></i> </p>
+                                <p id="email"></p>
+                                <p id="linkedin"></p>
+                                <p id="github"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-box col-xl-9 col-lg-8 col-md-9 col-sm-9">
+                    <div id="experience" class="card">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase fa-9x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="feature-title navbar-brand"> Experience </h3>
+                                <p id="experienceInfo"></p>
+                        </div>
+                    </div>
+
+                    <div id="education" class="card">
+                        <div class="card-header">
+                            <i class="fas fa-user-graduate fa-9x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="feature-title navbar-brand"> Education </h3>
+                            <p id="educationInfo"></p>
+                        </div>
+                    </div>
+
+                    <div id="skills" class="card">
+                        <div class="card-header">
+                            <i class="fas fa-cogs fa-9x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="feature-title navbar-brand"> Skills </h3>
+                            <p id="skillsInfo"></p>
+                        </div>
+                    </div>
+
+                    <div id="interests" class="card">
+                        <div class="card-header">
+                            <i class="fas fa-hiking fa-9x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="feature-title navbar-brand"> Interests </h3>
+                            <p id="intrestsInfo"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="" id="footer">
+        <div class="container-fluid">
+            <p id="copyRightName" class="paragraph-footer"></p>
         </div>
-        <div id="experience">
+    </footer>
 
+    <script src="canvas.js" charset="utf-8"></script>
 
-        </div>
-        <div id="education">
+</body>
 
-        </div>
-        <div id="skills">
-
-        </div>
-        <div id="links">
-
-        </div>
-        
-    </body>
 </html>
