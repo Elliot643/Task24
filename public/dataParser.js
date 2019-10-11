@@ -1,7 +1,7 @@
 function placeInfo(){
     $.getJSON("data.json", function(jsonData){
         document.getElementById("titlePlacement").innerHTML=jsonData.name+" - CV";;
-        document.getElementById("bigName").innerHTML=jsonData.name;
+        //document.getElementById("bigName").innerHTML=jsonData.name;
         document.getElementById("name").innerHTML=jsonData.name;
         document.getElementById("copyRightName").innerHTML="© Copyright 2019 "+jsonData.name;
 
@@ -17,7 +17,7 @@ function placeInfo(){
         document.getElementById("linkedin").innerHTML="<a target=\"_blank\" href="+jsonData.links.linkedin+">"+ 
             "<i class=\"fab fa-linkedin fa-2x\"></i> </a> LinkedIn";
 
-        document.getElementById("linkedin").innerHTML="<a target=\"_blank\""+ 
+        document.getElementById("github").innerHTML="<a target=\"_blank\""+
             "href="+jsonData.links.github+"> <i class=\" fab fa-github fa-2x\"></i> </a> </a> GitHub";
         
         let allIntrests = "";
