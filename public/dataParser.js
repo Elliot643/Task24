@@ -1,7 +1,6 @@
 function placeInfo(){
     $.getJSON("data.json", function(jsonData){
         document.getElementById("titlePlacement").innerHTML=jsonData.name+" - CV";;
-        //document.getElementById("bigName").innerHTML=jsonData.name;
         document.getElementById("name").innerHTML=jsonData.name;
         document.getElementById("copyRightName").innerHTML="© Copyright 2019 "+jsonData.name;
 

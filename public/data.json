@@ -1,12 +1,12 @@
 {
-    "name": "Anders Andersson",
-    "email": "Anders_Andersson@gmail.com",
-    "age": 27,
-    "phone":123456789,
+    "name": "Elliot Gustafsson",
+    "email": "elliot643@hotmail.com",
+    "age": 22,
+    "phone":"+46723270777",
     "address":{
       "city":"Växjö",
-      "streetAddress": "Storgatan 10",
-      "postal": "35277"
+      "streetAddress": "Hovsdalsvägen 12",
+      "postal": "35265"
     },
   
     "skills":[
@@ -17,28 +17,19 @@
     ],
     "intrests":[
       "Skiing",
-      "Computer Games"
-    ],
-  
-    "languages":[
-      {"name": "Swedish", "experience" : "High"},
-      {"name": "English", "experience" : "High"},
-      {"name": "German", "experience" : "Moderate"},
-      {"name": "French", "experience" : "Low"}
+      "Computer Games",
+      "Strength Training"
     ],
   
     "education":[
-      {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"},
       {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"}
     ],
     "experience":[
-      {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"},
       {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"}
     ],
   
     "links":{
-      "linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/",
-      "github": "https://github.com/Edis91/cv",
-      "homepage:": "https://edis91.github.io/cv"
+      "linkedin": "https://www.linkedin.com/in/elliot-gustafsson-87317b189/",
+      "github": "https://github.com/Elliot643"
     }
   }
