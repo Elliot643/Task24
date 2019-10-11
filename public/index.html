@@ -15,14 +15,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ee27a38f4c.js"></script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="dataParser.js"></script>
-
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dataParser.js"></script>
 </head>
 
 <body onload="placeInfo()">
@@ -33,7 +32,7 @@
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
 
-                <a class="navbar-brand" href=""> Sheldon Cooper </a>
+                <a id="bigName" class="navbar-brand" href=""> Sheldon Cooper </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -84,14 +83,14 @@
                         </div>
                         <div class="card-body">
                             <h3 class="feature-title navbar-brand"> Contact info</h3>
-                                <p> <i class="fas fa-signature fa-2x"></i> Anders Andersson </p>
-                                <p> <i class="fas fa-phone-volume fa-2x"></i> 070 666 6666 </p>
-                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> Växjö </p>
-                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> Storgatan 5A </p>
-                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> 35522 </p>
-                                <p> <a href="mailto:edisgrudic@gmail.com"><i class="fas fa-envelope fa-2x"></i> </a> </a>Anders_Andersson@gmail.com </p>
-                                <p> <a target="_blank" href=https://www.linkedin.com/in/edis-grudic-22a76266/> <i class="fab fa-linkedin fa-2x"></i> </a> LinkedIn </p>
-                                <p> <a target="_blank" href="https://github.com/Edis91"> <i class=" fab fa-github fa-2x"></i> </a> </a> GitHub </p>
+                                <p> <i class="fas fa-signature fa-2x"></i> <i id="name"></i> </p>
+                                <p> <i class="fas fa-phone-volume fa-2x"></i> <i id="phone"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="city"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="streetAddress"></i> </p>
+                                <p> <i class="fas fa-map-marker-alt fa-2x"></i> <i id="postal"></i> </p>
+                                <p id="email"></p>
+                                <p id="linkedin"></p>
+                                <p id="github"></p>
                         </div>
                     </div>
                 </div>
@@ -104,11 +103,7 @@
                         </div>
                         <div class="card-body">
                             <h3 class="feature-title navbar-brand"> Interests </h3>
-                                <p> Hiking </p>
-                                <p> Swimming </p>
-                                <p> karaoke </p>
-                                <p> Drinking </p>
-                                <p> Sleeping </p>
+                                <p id="intrests"></p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +115,7 @@
     <footer class="" id="footer">
         <h2 class="section-heading style-text navbar-brand heading-color-white"> Contact </h2>
         <div class="container-fluid">
-            <p class="paragraph-footer">© Copyright 2019 Sheldon Cooper </p>
+            <p id="copyRightName" class="paragraph-footer"></p>
         </div>
     </footer>
 
