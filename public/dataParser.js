@@ -24,7 +24,29 @@ function placeInfo(){
         for(let i=0;i<jsonData.intrests.length;i++){
             allIntrests+="<p>"+jsonData.intrests[i]+"</p>";
         }
-        document.getElementById("intrests").innerHTML=allIntrests;
+        document.getElementById("intrestsInfo").innerHTML=allIntrests;
+
+        let allExperience = "";
+        for(let i=0;i<jsonData.experience.length;i++){
+            let localExperience = jsonData.experience[i];
+            allExperience+="<p><b><font size=\"4\">"+localExperience.title+" at "+localExperience.company+"</font></b><br>"+
+                localExperience.yearStart+"-"+localExperience.yearEnd+"<br>"+localExperience.description+"</p>";
+        }
+        document.getElementById("experienceInfo").innerHTML=allExperience;
+
+        let allEducation = "";
+        for(let i=0;i<jsonData.education.length;i++){
+            let localEducation = jsonData.education[i];
+            allEducation+="<p><b><font size=\"4\">"+localEducation.title+"</font></b><br>"+localEducation.school+", "+
+                localEducation.yearStart+"-"+localEducation.yearEnd+"</p>";
+        }
+        document.getElementById("educationInfo").innerHTML=allEducation;
+
+        let allSkills = "";
+        for(let i=0;i<jsonData.skills.length;i++){
+            allSkills+="<p>"+jsonData.skills[i]+"</p>";
+        }
+        document.getElementById("skillsInfo").innerHTML=allSkills;
 
     });
 }

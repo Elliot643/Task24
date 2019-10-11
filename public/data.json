@@ -28,7 +28,12 @@
     ],
   
     "education":[
-      {"school": "School", "title": "Data Engineer"}
+      {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"},
+      {"school": "Halmstad University", "title": "Computer Science and Engineering","yearStart":"2016","yearEnd":"2019"}
+    ],
+    "experience":[
+      {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"},
+      {"title":"Consultant","company":"Experis AB","yearStart":"2019","yearEnd":"2020","description":"Full stack with Java and JavaScript"}
     ],
   
     "links":{
