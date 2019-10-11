@@ -1,35 +1,127 @@
 <!DOCTYPE html>
-<html>  
-    <head>    
-        <meta charset="utf-8">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="dataParser.js"></script>    
-        <title>Online CV</title>  
-    </head>  
-    <body onload="placeInfo()">    
-        <h1>Online CV</h1>
-        <div id="info">
-            <p><img src="picture.jpg" alt="Bild"></p>
-            <p id="namePlacement"></p>
-            <p id="phonePlacement"></p>
-        </div>
-        <div id="languages">
+<html>
+<head>
+<title id="titlePlacement"></title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="dataParser.js"></script> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
 
-        </div>
-        <div id="experience">
-
-
-        </div>
-        <div id="education">
-
-        </div>
-        <div id="skills">
-
-        </div>
-        <div id="links">
-
-        </div>
-        
-    </body>
+</head>
+<body id="top" onload="placeInfo()">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="headshot.jpg" alt="picture" />
+		</div>
+		
+		<div id="name">
+			<h1 id="bigName" class="quickFade delayTwo"></h1>
+			<h3 class="quickFade delayThree">Software Engineer</h3>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+                <li id="agePlacement"></li>
+                <li id="addressPlacement"></li>
+                <li id="phonePlacement"></li>
+                <li id="emailPlacement"></li>
+                <li id="linkedinPlacement"></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		
+        <section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>College/University</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+				</article>
+				
+				<article>
+					<h2>College/University</h2>
+					<p class="subDetails">Qualification</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Job Title at Company</h2>
+					<p class="subDetails">April 2011 - Present</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</article>
+				
+				<article>
+					<h2>Job Title at Company</h2>
+					<p class="subDetails">Janruary 2007 - March 2011</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</article>
+				
+				<article>
+					<h2>Job Title at Company</h2>
+					<p class="subDetails">October 2004 - December 2006</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+					<li>A Key Skill</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
 </html>
