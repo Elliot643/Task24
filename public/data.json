@@ -3,9 +3,11 @@
   "email": "Anders_Andersson@gmail.com",
   "age": 27,
   "phone":123456789,
-  "address":[
-    {"city":"Växjö","streetAddress": "Storgatan 10","postal": "35277"}
-  ],
+  "address":{
+    "city":"Växjö",
+    "streetAddress": "Storgatan 10",
+    "postal": "35277"
+  },
 
   "skills":[
     "Java",
@@ -29,9 +31,9 @@
     {"school": "School", "title": "Data Engineer"}
   ],
 
-  "links":[
-    {"linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/"},
-    {"github": "https://github.com/Edis91/cv"},
-    {"homepage:": "https://edis91.github.io/cv"}
-  ]
+  "links":{
+    "linkedin": "https://www.linkedin.com/in/edis-grudic-22a76266/",
+    "github": "https://github.com/Edis91/cv",
+    "homepage:": "https://edis91.github.io/cv"
+  }
 }
